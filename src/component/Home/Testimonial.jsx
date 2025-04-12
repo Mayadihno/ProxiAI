@@ -15,7 +15,7 @@ const Testimonial = () => {
         <h2 className="text-4xl md:text-5xl font-extrabold leading-tight mb-6">
           Customer <span className="text-indigo-600">Testimonials</span>
         </h2>
-        <p className="text-gray-600 text-lg max-w-3xl mx-auto mb-12 leading-relaxed">
+        <p className="text-gray-600 md:text-lg text-sm max-w-3xl mx-auto mb-12 leading-relaxed">
           See what our clients have to say about their experience working with
           us. We pride ourselves on delivering high-quality solutions that help
           businesses thrive.

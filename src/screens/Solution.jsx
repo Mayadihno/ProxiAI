@@ -6,7 +6,7 @@ const Solution = () => {
     <React.Fragment>
       <div className="max-w-7xl mx-auto px-4 py-10">
         <h2 className="text-3xl font-bold text-center mb-4">Our Solutions</h2>
-        <p className="text-center text-gray-600 mb-10">
+        <p className="text-center md:text-base text-sm text-gray-600 mb-10">
           Discover a comprehensive suite of solutions designed to streamline
           your business operations, enhance customer experiences, and drive
           growth. Whether you're looking to automate processes, harness the

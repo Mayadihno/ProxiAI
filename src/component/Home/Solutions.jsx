@@ -8,7 +8,7 @@ const Solutions = () => {
   return (
     <React.Fragment>
       {/* Who We Are Section */}
-      <div className="max-w-7xl mx-auto my-20 flex flex-col lg:flex-row items-center gap-12">
+      <div className="md:max-w-7xl w-[90%] mx-auto md:my-20 my-10 flex flex-col lg:flex-row items-center gap-12">
         <div className="lg:w-1/2">
           <h3 className="text-3xl font-bold mb-4">Who We Are</h3>
           <p className="text-gray-700 text-base leading-relaxed">
@@ -22,7 +22,7 @@ const Solutions = () => {
         </div>
         <div className="lg:w-1/2">
           <img
-            src="https://images.pexels.com/photos/3184465/pexels-photo-3184465.jpeg"
+            src="https://images.pexels.com/photos/6153354/pexels-photo-6153354.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
             alt="Team working together"
             className="rounded-2xl w-full h-auto shadow-lg object-contain"
           />
@@ -36,7 +36,7 @@ const Solutions = () => {
           <h2 className="text-4xl md:text-5xl font-extrabold leading-tight mb-6">
             Our <span className="text-indigo-600">Solutions</span>
           </h2>
-          <p className="text-gray-600 text-lg max-w-3xl mx-auto mb-12 leading-relaxed">
+          <p className="text-gray-600 md:text-lg text-sm max-w-3xl mx-auto mb-12 leading-relaxed">
             Discover a comprehensive suite of solutions designed to streamline
             your operations, enhance productivity, and unlock new opportunities.
             Whether you're aiming to automate workflows, harness the power of

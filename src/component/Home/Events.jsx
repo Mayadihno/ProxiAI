@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { promotionalEventsData, upcomingEventsData } from "../../static/data";
+import { useNavigate } from "react-router-dom";
 
 const EventGallery = () => {
   const [viewGallery, setViewGallery] = useState(null);
@@ -7,6 +8,7 @@ const EventGallery = () => {
   const handleViewGallery = (index, type) => {
     setViewGallery({ index, type });
   };
+  const navigate = useNavigate();
 
   const renderEventCards = (events, type) => {
     return events.map((event, index) => (
@@ -72,10 +74,10 @@ const EventGallery = () => {
         <div className="inline-block px-6 py-2 bg-indigo-100 text-indigo-600 rounded-full text-sm font-semibold tracking-wide uppercase mb-3">
           Promotional Events
         </div>
-        <h2 className="text-4xl font-extrabold leading-tight mb-6">
+        <h2 className="md:text-4xl text-2xl font-extrabold leading-tight mb-6">
           Our <span className="text-indigo-600">Promotional Events</span>
         </h2>
-        <p className="text-gray-600 text-lg max-w-3xl mx-auto mb-12 leading-relaxed">
+        <p className="text-gray-600 md:text-lg text-sm max-w-3xl mx-auto mb-12 leading-relaxed">
           Explore our exciting promotional events with exclusive offers,
           giveaways, and more!
         </p>
@@ -89,10 +91,10 @@ const EventGallery = () => {
         <div className="inline-block px-6 py-2 bg-indigo-100 text-indigo-600 rounded-full text-sm font-semibold tracking-wide uppercase mb-3">
           Upcoming Events
         </div>
-        <h2 className="text-4xl font-extrabold leading-tight mb-6">
+        <h2 className="md:text-4xl text-2xl font-extrabold leading-tight mb-6">
           Our <span className="text-indigo-600">Upcoming Events</span>
         </h2>
-        <p className="text-gray-600 text-lg max-w-3xl mx-auto mb-12 leading-relaxed">
+        <p className="text-gray-600 md:text-lg text-sm max-w-3xl mx-auto mb-12 leading-relaxed">
           Be part of our upcoming events and stay ahead of the trends with
           expert speakers, workshops, and more.
         </p>
@@ -102,7 +104,10 @@ const EventGallery = () => {
         {renderEventCards(upcomingEventsData.slice(0, 3), "upcoming")}
       </div>
       <div className="mt-10 text-center">
-        <button className="px-6 py-3 cursor-pointer bg-blue-600 text-white font-medium rounded-lg hover:bg-blue-700 transition duration-300">
+        <button
+          onClick={() => navigate("/events")}
+          className="px-6 py-3 cursor-pointer bg-blue-600 text-white font-medium rounded-lg hover:bg-blue-700 transition duration-300"
+        >
           Show More Events
         </button>
       </div>

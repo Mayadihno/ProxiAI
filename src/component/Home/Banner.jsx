@@ -30,7 +30,9 @@ const Banner = () => {
               />
               <div className="absolute top-0 left-0 w-full h-full bg-black/50 bg-opacity-40 flex flex-col justify-center items-center text-white">
                 <h2 className="text-3xl md:text-5xl font-bold">{item.text}</h2>
-                <p className="mt-4 text-lg md:text-xl">{item.subtext}</p>
+                <p className="mt-4 text-lg md:text-xl text-center">
+                  {item.subtext}
+                </p>
               </div>
             </SwiperSlide>
           ))}

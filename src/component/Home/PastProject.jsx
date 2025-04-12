@@ -17,7 +17,7 @@ const PastProject = () => {
             <h2 className="text-4xl md:text-5xl font-extrabold leading-tight mb-6">
               Past <span className="text-indigo-600">Projects</span>
             </h2>
-            <p className="text-gray-600 text-base max-w-3xl mx-auto mb-12 leading-relaxed">
+            <p className="text-gray-600 md:text-base text-sm max-w-3xl mx-auto mb-12 leading-relaxed">
               Browse a selection of our completed projects, ranging from fintech
               and health tech to e-learning and logistics. Each project
               highlights our commitment to innovation, problem-solving, and

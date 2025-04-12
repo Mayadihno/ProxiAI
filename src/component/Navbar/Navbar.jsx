@@ -41,13 +41,14 @@ const Navbar = () => {
         {isOpen && (
           <div className="md:hidden px-4 pb-4 space-y-2">
             {navItems.map((item) => (
-              <a
+              <Link
                 key={item.label}
-                href={item.href}
+                to={item.href}
+                onClick={() => setIsOpen(false)}
                 className="block text-gray-700 hover:text-indigo-600 font-medium transition"
               >
                 {item.label}
-              </a>
+              </Link>
             ))}
           </div>
         )}

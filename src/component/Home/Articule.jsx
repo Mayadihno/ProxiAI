@@ -14,7 +14,7 @@ const Articule = () => {
             <h2 className="text-4xl text-center md:text-5xl font-extrabold leading-tight mb-6">
               Our <span className="text-indigo-600">Articles</span>
             </h2>
-            <p className="text-gray-600 text-center text-lg max-w-3xl mx-auto mb-12 leading-relaxed">
+            <p className="text-gray-600 text-center text-sm md:text-lg max-w-3xl mx-auto mb-12 leading-relaxed">
               Discover our latest articles covering a wide range of topics, from
               technology and business to lifestyle and sustainability. Stay
               informed and explore the trends shaping the future.

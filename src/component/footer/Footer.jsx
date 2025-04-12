@@ -21,7 +21,7 @@ const Footer = () => {
           </div>
 
           {/* Column 2: Quick Links */}
-          <div className="ml-20">
+          <div className="md:ml-20">
             <h3 className="text-xl font-semibold mb-4">Quick Links</h3>
             <nav className="flex flex-col space-y-2">
               {navItems.map((item) => (
@@ -37,7 +37,7 @@ const Footer = () => {
           </div>
 
           {/* Column 3: Social Media */}
-          <div className="ml-20">
+          <div className="md:ml-20">
             <h3 className="text-xl font-semibold mb-4">Follow Us</h3>
             <div className="flex space-y-6 flex-col">
               <ICONS.facebook size={25} className=" cursor-pointer" />

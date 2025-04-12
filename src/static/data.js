@@ -5,7 +5,7 @@ export const navItems = [
   { label: "Articles", href: "/articles" },
   { label: "Events", href: "/events" },
   { label: "Contact", href: "/contact" },
-  { label: "Admin", href: "/admin" },
+  { label: "Admin", href: "/login" },
 ];
 
 export const bannerData = [

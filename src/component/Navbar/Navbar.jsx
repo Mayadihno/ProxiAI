@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { navItems } from "../../static/data";
 import { ICONS } from "../../static/icons";
+import { Link } from "react-router-dom";
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -16,13 +17,13 @@ const Navbar = () => {
           {/* Desktop Menu */}
           <nav className="hidden md:flex space-x-6">
             {navItems.map((item) => (
-              <a
+              <Link
                 key={item.label}
-                href={item.href}
+                to={item.href}
                 className="text-gray-700 hover:text-indigo-600 font-medium transition"
               >
                 {item.label}
-              </a>
+              </Link>
             ))}
           </nav>
 

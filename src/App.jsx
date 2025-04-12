@@ -11,6 +11,8 @@ import Solution from "./screens/Solution";
 import PastProject from "./screens/PastProject";
 import Blogs from "./screens/Blogs";
 import Event from "./screens/Event";
+import PRoute from "./protected/PRoute";
+import Dashboard from "./component/admin/Dashboard";
 
 function App() {
   return (
@@ -25,6 +27,9 @@ function App() {
         <Route path="/projects" element={<PastProject />} />
         <Route path="/articles" element={<Blogs />} />
         <Route path="/events" element={<Event />} />
+        <Route path="/*" element={<PRoute />}>
+          <Route path="admin-dashboard" element={<Dashboard />} />
+        </Route>
       </Routes>
       <Footer />
     </>

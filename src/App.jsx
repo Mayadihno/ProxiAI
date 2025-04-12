@@ -1,10 +1,18 @@
 import React from "react";
 import "./App.css";
+import ScrollToTop from "./static/ScrollTop";
+import Navbar from "./component/Navbar/Navbar";
+import Home from "./component/Home/Home";
+import { Route, Routes } from "react-router-dom";
 
 function App() {
   return (
     <>
-      <h3 className="text-3xl text-red-500">Hello there</h3>
+      <ScrollToTop />
+      <Navbar />
+      <Routes>
+        <Route path="/" element={<Home />} />
+      </Routes>
     </>
   );
 }
